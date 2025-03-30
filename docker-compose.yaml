@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api1:
+    image: nickresh/lab2:2.0
+    build: .
+    ports:
+      - "8080:8080"
+
+  api2:
+    image: platypusjo/lab2:2.0
+    ports:
+      - "8081:8080"
